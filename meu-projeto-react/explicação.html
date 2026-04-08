@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Exemplo Laço For</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        #lista-numeros { margin-top: 10px; font-size: 18px; }
+    </style>
+</head>
+<body>
+
+    <h2>Contagem com Loop For</h2>
+    <div id="lista-numeros"></div>
+
+    <script>
+        // Seleciona o elemento onde o resultado será exibido
+        const container = document.getElementById('lista-numeros');
+        let resultado = "";
+
+        // Estrutura for: (início; condição; incremento)
+        for (let i = 1; i <= 20; i++) {
+            // Adiciona o número atual seguido de um traço
+            resultado += i + " - ";
+        }
+
+        // Exibe o resultado final na página
+        container.innerHTML = resultado + "Fim!";
+    </script>
+
+</body>
+</html>
